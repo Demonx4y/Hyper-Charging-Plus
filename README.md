@@ -1,124 +1,118 @@
+
 # ⚡ Hyper Charging+
 
-**Hyper Charging+** is a next-generation **fast-charging Magisk module** designed to
-optimize how existing charging hardware negotiates and sustains power — **safely and transparently**.
+Hyper Charging+ is a fast-charging Magisk module that improves how your device manages and sustains charging power using its existing hardware.
 
-This is **not** a fake booster.  
-This is **not** a hardware unlock.  
-This is a carefully engineered **charging behavior optimizer** built around real device limits.
+It focuses on adapting charging current in real time based on battery temperature and charging conditions, with the goal of maintaining stable and consistent fast charging when conditions allow.
+
+This module does not unlock hardware limits or replace charging protocols. It works alongside the device’s normal charging system.
 
 ---
 
 ## 🔋 What Hyper Charging+ Does
 
-• Pushes **maximum possible charging power when conditions are safe**  
-• Dynamically adapts charging current based on **real battery temperature**  
-• Reduces unnecessary throttling and sudden current drops  
-• Maintains **stable, consistent charging** across long sessions  
+• Requests higher charging current when the battery is cool  
+• Gradually scales charging current down as temperature increases  
+• Helps reduce sudden throttling and unstable current drops  
+• Maintains smoother charging behavior during long sessions  
 
-No timers.  
-No placebo tweaks.  
-No gimmicks.
+The logic is continuous and adaptive rather than one-time tweaks.
 
 ---
 
-## 🧠 Why This Approach
+## 🧠 How It Works
 
-Android’s charging HAL and PMIC continuously re-apply limits during runtime.
-A single one-time write is often **overridden within seconds**.
+Android charging systems frequently re-apply limits during runtime. Single writes to charging nodes are often overridden quickly.
 
-Hyper Charging+ intentionally uses:
-• **Adaptive thermal logic**  
-• **Continuous dominance loops**  
-• **Multi-node current negotiation**  
+Hyper Charging+ uses a lightweight loop that:
+• Monitors battery temperature  
+• Adjusts requested current dynamically  
+• Writes to multiple standard power supply nodes  
 
-This allows the module to **work with the hardware**, not fight it — maintaining consistency
-without hard-locking unsafe values.
+This allows the module to cooperate with the system instead of fighting it, keeping charging behavior more consistent over time.
 
 ---
 
-## ⚠️ Important Transparency Notice
+## ⚡ Charging Protocol Behavior
 
-Hyper Charging+ does **NOT**:
+Hyper Charging+ does not replace or bypass charging protocols.
 
-✗ Increase hardware charging capability  
-✗ Turn low-watt devices into ultra-fast chargers  
-✗ Spoof battery temperature or bypass safety systems  
-✗ Break PMIC, BMS, or thermal protection loops  
+• Proprietary fast-charging systems continue to operate normally  
+• The module does not spoof protocols or force unsupported modes  
+• Standard charging paths are optimized where possible  
 
-What it **DOES**:
-
-✓ Optimizes how your device uses its **existing charging hardware**  
-✓ Requests the **maximum current your hardware already supports**  
-✓ Scales down intelligently as heat or charge level rises  
-
-Final results depend on:
-**device • charger • cable • temperature • battery health**
-
-> Note: Charging speed naturally reduces at higher charge levels (≈80–100%).  
-> This behavior is normal, expected, and intentionally preserved.
-
-Hyper Charging+ does not replace proprietary fast-charging systems — it complements them
-by reducing unnecessary throttling and improving charging stability when conditions allow.
+On devices that support proprietary fast charging, those systems remain in control.  
+On devices without them, the module improves stability within standard charging limits.
 
 ---
 
-## ⚡ About Fast-Charging Protocols
+## 🌡️ Thermal-Aware Charging
 
-Hyper Charging+ does **not interfere with proprietary fast-charging protocols** such as:
-VOOC, SuperVOOC, Warp, Turbo, FlashCharge, etc.
+Charging current is adjusted using a temperature-based ladder:
 
-• No protocol spoofing  
-• No PD/QC manipulation  
-• No vendor HAL overrides  
+• Cool temperatures allow higher current requests  
+• Moderate heat reduces current gradually  
+• Higher temperatures trigger stronger current reduction  
 
-On supported devices, proprietary fast charging continues **unchanged**.  
-On unsupported devices, the module optimizes **standard charging paths only**.
+This helps maintain charging speed without pushing unsafe thermal behavior.
 
 ---
 
-## 📊 Expected Results
+## 📊 What to Expect
 
-You may observe:
-• Higher sustained charging current  
-• Fewer drops under moderate heat  
-• Smoother tapering near high charge levels  
+Depending on your device, charger, and conditions, you may notice:
+
+• More stable charging current  
+• Fewer unnecessary drops under moderate heat  
+• Smoother tapering as battery level increases  
 • Better real-world charging consistency  
 
-Improvements are **realistic, measurable, and safe** — not exaggerated.
+Charging speed will still reduce naturally near high battery percentages. This behavior is normal and preserved.
+
+---
+
+## 📦 Installation
+
+1. Flash the module using Magisk
+2. Reboot
+
+The charging control service starts automatically after boot.
+
+---
+
+## 🧹 Uninstall
+
+• Disable or remove the module in Magisk  
+• Reboot  
+
+The system returns to its default charging behavior.
 
 ---
 
 ## 🧪 Status
 
-• Tested across multiple chargers (high-watt, mid-watt, low-watt)  
-• Tested under idle and load (gaming + charging)  
-• Verified to respect adapter and hardware limits  
-• Actively evolving based on real user feedback  
+• Tested with different chargers and cables  
+• Tested during idle and active use  
+• Designed to respect hardware and thermal limits  
+• Ongoing development based on real usage feedback  
 
 Future updates may include:
-• Advanced tuning refinements  
-• Optional statistics / UI  
-• Experimental branches (clearly labeled)
+• Refinements to thermal tuning  
+• Optional diagnostics  
+• Experimental features clearly marked
 
 ---
 
 ## 👤 Author
 
-**Razal (Razla1_1)**  
-Independent developer
-
+Razal (Razal1_1)  
+Independent developer  
+Email: razalrazal759@gmail.com
 ---
 
 ## 📜 License
 
-See `LICENSE` file.
+This project is licensed under the GNU General Public License v3 (GPLv3).
 
----
-
-## NOTICE
-
-This software is distributed with attribution and license terms.
-
-If you received this module **without** the accompanying `README.md`
-and `LICENSE` file, it has been redistributed **without authorization**.
+You are free to use, modify, and redistribute this project under the terms of the GPLv3.
+See the `LICENSE` file for full details.
