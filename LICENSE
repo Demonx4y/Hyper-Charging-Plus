@@ -1,47 +1,52 @@
-Hyper Charging+ License
-Copyright (c) 2026 Razal (Razla1_1)
 
-Permission is hereby granted to any individual to install and use
-the Hyper Charging+ Magisk module for personal, non-commercial use.
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
 
-This license allows:
-• Personal use
-• Testing and evaluation
-• Sharing feedback and performance results
+Copyright (C) 2026 Razal (Razla1_1)
 
-This license does NOT allow:
-• Redistribution of the module or modified versions
-• Repackaging or rebranding under another name
-• Uploading to third-party platforms without permission
-• Commercial use or monetization
-• Claiming authorship or partial ownership
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
 
-Source code may be inspected for transparency purposes,
-but modification, reuse, or redistribution of any part
-of the code is strictly prohibited without explicit permission
-from the author.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
 
-THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
-NON-INFRINGEMENT.
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
 
-IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES,
-OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR
-OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+--------------------------------------------------
 
-The author assumes no responsibility for battery wear,
-hardware degradation, data loss, or device damage.
+License Note
+
+This project is licensed under the GNU General Public License v3 (GPLv3).
+
+You are allowed to:
+• Use this software for any purpose
+• Study how it works
+• Modify it
+• Redistribute it
+
+Under the following conditions:
+• Any redistribution or modification must remain open source
+• Derivative works must also be licensed under GPLv3
+• Proper credit must be given to the original author:
+  Razal (Razla1_1)
+• This LICENSE file must be included with any redistribution
+
+This software is provided "AS IS".
+The author makes no guarantees regarding performance, safety,
+battery health, or hardware longevity.
+
 Use at your own risk.
 
-For permissions beyond this license, contact the author:
-📧 razalrazal759@gmail.com 
-Support inquiries and vulnerability reports are welcome.
+--------------------------------------------------
 
-NOTICE
+Contact
 
-This software is distributed with attribution and license terms.
+Author: Razal (Razla1_1)
+Email: razalrazal759@gmail.com
 
-If you received this module without the accompanying README.md
-and LICENSE file, it has been redistributed without authorization.
+Bug reports, contributions, and improvements are welcome.
