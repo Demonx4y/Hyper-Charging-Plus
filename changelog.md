@@ -2,14 +2,14 @@ Changelog
 
 Hyper Charging+ v1.1
 
-This update focuses on improving charging stability, thermal behavior, and real world consistency.
+This update focuses on improving charging stability, thermal behavior, and consistency.
 
 Changes and improvements
-• Added a multi step thermal ladder for smoother current scaling
+• Added a multi step thermal ladder for smoother current scaling and better thermal behaviour 
 • Charging power now adapts more gradually as temperature rises
 • Improved stability during long charging sessions
 • Reduced sudden current drops under moderate heat
 • Improved behavior across different chargers and cables
 • Minimum current floor maintained when conditions are safe
 • Safer handling near higher temperature ranges
-• Charging loop tuned for consistentency 
+• Charging loop tuned for consistency
